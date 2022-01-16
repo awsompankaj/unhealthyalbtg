@@ -23,8 +23,8 @@ resource "aws_cloudwatch_metric_alarm" "alb_healthyhosts" {
   alarm_actions       = [aws_sns_topic.user_updates.arn]
   ok_actions          = [aws_sns_topic.user_updates.arn]
   dimensions = {
-    TargetGroup  = "targetgroup/My-app-tg/41d3a7cc48b31463"
-    LoadBalancer = "loadbalancer/app/Myapp-lb/bddf2c8a4043092b"
+    TargetGroup  = "targetgroup arn suffix"
+    LoadBalancer = "loadbalancer alb suffix"
   }
  }
 
