@@ -6,7 +6,7 @@ resource "aws_sns_topic" "user_updates" {
 resource "aws_sns_topic_subscription" "user_updates_sns_target" {
   topic_arn = aws_sns_topic.user_updates.arn
   protocol  = "email"
-  endpoint  = "awsompankaj@gmail.com"
+  endpoint  = "email id"
 }
 
 resource "aws_cloudwatch_metric_alarm" "alb_healthyhosts" {
